@@ -1,0 +1,7 @@
+---
+- hosts: {{node}}
+  remote_user: root
+  tasks:
+    - name: create a new file by custom name
+      shell: mkdir {{file_name}}
+      
