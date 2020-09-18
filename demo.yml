@@ -8,7 +8,7 @@
 - hosts: "{{node2}}"
   remote_user: root
   tasks:
-    - name: create a new der
+    - name: create a new dir
       file:
         path: /root/{{dir_name}}
         state: directory
