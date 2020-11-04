@@ -19,5 +19,5 @@
   tasks:
     - name: create a windows new dir
       win_file:
-        path: C:{{windows_dir_name}}
+        path: C:\{{windows_dir_name}}
         state: directory
