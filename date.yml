@@ -1,0 +1,13 @@
+---
+- hosts: "{{node1}}"
+  remote_user: root
+  tasks:
+    - name: date1
+      shell: date
+      
+- hosts: "{{node2}}"
+  remote_user: root
+  tasks:
+    - name: date2
+      shell: date
+      
