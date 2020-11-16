@@ -14,18 +14,4 @@
         state: directory
         mode: '0755'
 
-# - hosts: "{{node3}}"
-#   remote_user: administrator
-#   tasks:
-#     - name: create a windows new dir
-#       win_file:
-#         path: C:\{{windows_dir_name}}
-#         state: directory
-
-# - hosts: "{{node3}}"
-#   remote_user: administrator
-#   tasks:
-#     - name: date
-#       win_shell: date
-        
         
