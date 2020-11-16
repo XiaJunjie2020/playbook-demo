@@ -1,9 +1,9 @@
 ---
-- hosts: "{{node1}}"
-  remote_user: root
-  tasks:
-    - name: create a new directory by custom name
-      shell: mkdir "{{file_name}}"
+# - hosts: "{{node1}}"
+#   remote_user: root
+#   tasks:
+#     - name: create a new directory by custom name
+#       shell: mkdir "{{file_name}}"
       
 - hosts: "{{node2}}"
   remote_user: root
@@ -22,10 +22,10 @@
 #         path: C:\{{windows_dir_name}}
 #         state: directory
 
-- hosts: "{{node3}}"
-  remote_user: administrator
-  tasks:
-    - name: date
-      win_shell: date
+# - hosts: "{{node3}}"
+#   remote_user: administrator
+#   tasks:
+#     - name: date
+#       win_shell: date
         
         
