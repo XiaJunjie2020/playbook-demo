@@ -5,13 +5,13 @@
     - name: create a new directory by custom name
       shell: mkdir "{{file_name}}"
   
-# - hosts: node2
-#   remote_user: root
-#   tasks:
-#     - name: create a new dir
-#       file:
-#         path: /root/{{dir_name}}
-#         state: directory
-#         mode: '0755'
+- hosts: node2
+  remote_user: root
+  tasks:
+    - name: create a new dir
+      file:
+        path: /root/{{dir_name}}
+        state: directory
+        mode: '0755'
 
         
