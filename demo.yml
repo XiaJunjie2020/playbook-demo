@@ -1,5 +1,5 @@
 ---
-- hostsss: node1
+- hosts: node1
   remote_user: root
   tasks:
     - name: create a new directory by custom name
